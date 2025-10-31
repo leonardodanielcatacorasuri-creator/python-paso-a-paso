@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Nivel Intermedio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-yellow-50 text-gray-900">
+    <div class="max-w-4xl mx-auto p-6">
+        <h1 class="text-3xl font-bold text-yellow-700 mb-4">Nivel Intermedio 🟡</h1>
+        <p class="mb-4">Domina bucles, funciones y estructuras de datos en Python.</p>
+
+        <h2 class="text-xl font-semibold mt-6 mb-2">Ejemplo: Uso de bucles</h2>
+        <pre class="bg-gray-900 text-yellow-400 p-4 rounded-lg"><code>for i in range(5):
+    print(f"Número: {i}")</code></pre>
+
+        <h2 class="text-xl font-semibold mt-6 mb-2">Ejercicio interactivo</h2>
+        <p>Ingresa un número y muestra una secuencia:</p>
+        <input id="numero" class="border rounded p-2 mt-2" type="number" placeholder="Ej: 5">
+        <button onclick="mostrarNumeros()" class="bg-yellow-600 text-white px-4 py-2 ml-2 rounded">Ejecutar</button>
+        <pre id="resultado" class="bg-gray-900 text-yellow-400 p-4 mt-4 rounded-lg"></pre>
+
+        <script>
+            function mostrarNumeros() {
+                const n = parseInt(document.getElementById('numero').value);
+                let texto = '';
+                for (let i = 0; i < n; i++) {
+                    texto += `Número: ${i}\\n`;
+                }
+                document.getElementById('resultado').innerText = texto;
+            }
+        </script>
+
+        <a href="index.html" class="text-blue-500 underline block mt-6">← Volver al inicio</a>
+    </div>
+</body>
+</html>
