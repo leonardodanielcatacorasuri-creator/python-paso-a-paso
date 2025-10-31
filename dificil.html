@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Nivel Difícil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-red-50 text-gray-900">
+    <div class="max-w-4xl mx-auto p-6">
+        <h1 class="text-3xl font-bold text-red-700 mb-4">Nivel Difícil 🔴</h1>
+        <p class="mb-4">Aprende sobre clases, manejo de errores y conceptos avanzados en Python.</p>
+
+        <h2 class="text-xl font-semibold mt-6 mb-2">Ejemplo: Clases en Python</h2>
+        <pre class="bg-gray-900 text-red-400 p-4 rounded-lg"><code>class Persona:
+    def __init__(self, nombre):
+        self.nombre = nombre
+
+    def saludar(self):
+        print(f"Hola, soy {self.nombre}")
+
+p1 = Persona("Leonardo Daniel")
+p1.saludar()</code></pre>
+
+        <h2 class="text-xl font-semibold mt-6 mb-2">Ejercicio interactivo</h2>
+        <p>Crea tu propio objeto:</p>
+        <input id="nombreClase" class="border rounded p-2 mt-2" placeholder="Tu nombre">
+        <button onclick="mostrarSaludo()" class="bg-red-600 text-white px-4 py-2 ml-2 rounded">Ejecutar</button>
+        <p id="salida" class="mt-4 font-semibold"></p>
+
+        <script>
+            function mostrarSaludo() {
+                const nombre = document.getElementById('nombreClase').value;
+                document.getElementById('salida').innerText = `Hola, soy ${nombre}. ¡Listo para dominar Python!`;
+            }
+        </script>
+
+        <a href="index.html" class="text-blue-500 underline block mt-6">← Volver al inicio</a>
+    </div>
+</body>
+</html>
