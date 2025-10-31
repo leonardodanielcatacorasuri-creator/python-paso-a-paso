@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Nivel Fácil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-50 text-gray-900">
+    <div class="max-w-4xl mx-auto p-6">
+        <h1 class="text-3xl font-bold text-green-700 mb-4">Nivel Fácil 🟢</h1>
+        <p class="mb-4">Aprende los fundamentos de Python: variables, tipos de datos y estructuras básicas.</p>
+
+        <h2 class="text-xl font-semibold mt-6 mb-2">Ejemplo: Hola Mundo</h2>
+        <pre class="bg-gray-900 text-green-400 p-4 rounded-lg"><code>print("¡Hola, mundo!")</code></pre>
+
+        <h2 class="text-xl font-semibold mt-6 mb-2">Ejercicio interactivo</h2>
+        <p>Escribe tu nombre y haz clic en ejecutar:</p>
+        <input id="nombre" class="border rounded p-2 mt-2" placeholder="Tu nombre">
+        <button onclick="saludar()" class="bg-green-600 text-white px-4 py-2 ml-2 rounded">Ejecutar</button>
+        <p id="saludo" class="mt-4 font-semibold"></p>
+
+        <script>
+            function saludar() {
+                const nombre = document.getElementById('nombre').value;
+                document.getElementById('saludo').innerText = `¡Hola, ${nombre}! Bienvenido a Python.`;
+            }
+        </script>
+
+        <a href="index.html" class="text-blue-500 underline block mt-6">← Volver al inicio</a>
+    </div>
+</body>
+</html>
